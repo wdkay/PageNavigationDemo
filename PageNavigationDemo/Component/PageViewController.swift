@@ -438,7 +438,7 @@ extension PageViewController {
     
     cursorViewLeadingConstraint = NSLayoutConstraint(item: cursorView, attribute: .Left, relatedBy:  .Equal, toItem: headerView, attribute: .Left, multiplier: 1, constant: 0)
     
-    updateCursorWithPage(CGFloat(Parameters.firstIndex), move: 0)
+    manageHeaderScrollView(bodyScrollView)
     
     view.addConstraints(constraints)
     view.addConstraint(cursorViewLeadingConstraint!)
